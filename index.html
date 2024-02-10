@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration Form</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+    </head>
+
+    <body>
+        <div class="container">
+            <h2 class="form-title">Parish Youth Ministry (PYM) Registration Form</h2>
+            <form class="form"
+            method="post" 
+            name="form"
+            onsubmit="return validateForm()"
+            action="https://script.google.com/macros/s/AKfycby7crxPMXODuSfrXk_W_6q5OeZQplP5UkbbLQvEGX7B24qYig_XHz5CHbAAfCTzcXRa/exec">
+                
+                    <div class="input-box">
+                        <label for="name">Full Name</label>
+                        <input type="text" name="Name" id="name" placeholder="Enter Full Name">
+                    </div>
+                <div class="column">
+                    <div class="input-box">
+                        <label for="nname">Nickname</label>
+                        <input type="text" name="Nickname" id="nname" placeholder="Enter Nickname">
+                    </div>
+
+                    <div class="input-box">
+                        <label for="age">Age</label>
+                        <input type="number" name="Age" id="age" min="1" max="100">
+                    </div>
+                </div>
+
+                <div class="gender-box">
+                    <h3>Gender</h3>
+                    <div class="gender-option">
+                        <div class="gender">
+                            <input type="radio" name="Gender" id="male">
+                            <label for="male">Male</label>
+                        </div>
+                        <div class="gender">
+                            <input type="radio" name="Gender" id="female">
+                            <label for="female">Female</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="input-box">
+                        <label for="bday">Date of Birth: </label>
+                        <input type="date" name="DOB" id="bday">
+                    </div>
+
+                    <div class="input-box">
+                        <label for="contactn">Contact Number: </label>
+                        <input type="tel" name="Contact Number" id="contactn" placeholder="63XXXXXXXXXX">
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="input-box">
+                        <label for="email">Email: </label>
+                        <input type="email" name="Email" id="email" placeholder="Enter Email">
+                    </div>
+
+                    <div class="input-box">
+                        <label for="fb">Facebook Account: </label>
+                        <input type="text" name="Facebook" id="fb" placeholder="Enter Facebook Account">
+                    </div>
+                </div>
+                    <div class="input-box">
+                        <label for="address">Home Address: </label>
+                        <input type="text" name="Address" id="address" placeholder="Enter Home Address">
+                    </div>
+
+                    <div class="emergency-box">
+                        <h3>In case of emergency:</h3>
+                        <div class="input-box">
+                            <label for="emergencycontactp">Contact Person: </label>
+                            <input type="text" name="Contact Person" id="emergencycontactp" placeholder="Enter Contact Person">
+                        </div>
+
+                        <div class="input-box">
+                            <label for="emergencycontactn">Emergency Contact Number: </label>
+                            <input type="tel" name="Emergency Contact Number" id="emergencycontactn" placeholder="63XXXXXXXXXX">
+                        </div>
+                    </div>
+                    <button type="submit" value="Submit" class="button">Submit</button>
+            </form>
+        </div>
+    </body>
+</html>
